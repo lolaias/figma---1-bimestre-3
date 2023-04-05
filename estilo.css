@@ -1,61 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
-*{
-   margin:0;
-   padding: 0;
-   outline: 0;
-   box-sizing: border-box;
-   font-family: 'inter', sans-serif;
-     font-weight: 400;
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+    font-weight: 400;
 
 }
- :root{
+
+:root {
     --primary: #ddcda1;
     --secondary: #C17944;
     --secondary-light: rgb(173, 163, 134);
     --third: #C17944;
-    --black:black;
-    --white:white;
+    --black: black;
+    --white: white;
 
- }
- /*Cabeçalho*/
- header{
-    display: flex;
- }
-
-header{
-   border-bottom: 0.4rem solid var(--third);
-   display:flex;
-   height: 6rem;
 }
+
+/*Cabeçalho*/
+header {
+    display: flex;
+}
+
+header {
+    border-bottom: 0.4rem solid var(--third);
+    display: flex;
+    height: 6rem;
+}
+
 header picture {
     margin-left: 0.5rem;
     padding: 0.5rem;
 }
-header picture img{
+
+header picture img {
     height: 100%;
-    
+
 }
+
 /*navegação*/
-header nav{ 
+
+header nav {
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: right;
 }
-header nav ul{
+
+header nav ul {
     list-style-type: none;
     display: flex;
     align-items: center;
     height: 100%;
 }
-header nav ul li{
+
+header nav ul li {
     padding: 1rem;
     height: 100%;
     display: flex;
     align-items: center;
 }
+
 header nav ul li {
     text-decoration: none;
     color: var(--black);
@@ -64,18 +73,21 @@ header nav ul li {
 header nav ul li a:hover {
     background-color: var(--secondary-light);
 }
+
 /*Principal*/
-main{
+main {
     min-height: calc(100vh - 9rem);
 }
-main section{
-   display: flex;
-   max-width: 1090px;
-   margin: 0 auto; 
+
+main section {
+    display: flex;
+    max-width: 1090px;
+    margin: 0 auto;
 }
-main section img{
+
+main section img {
     width: 50%;
-  
+
 }
 /*Listagem*/
 main section.list {
@@ -83,38 +95,44 @@ main section.list {
     grid-template-columns: auto auto auto auto;
     gap: 0.8rem;
 }
+
 main section.list aside {
-    background-color:var(--primary);
+    background-color: var(--primary);
     border-radius: 1rem;
     padding: 0.8rem;
     line-height: 1.7rem;
 }
-main section.list aside h3 strong{
+
+main section.list aside h3 strong {
     font-weight: bold;
 }
+
 footer {
-    background-color:var(--third);
+    background-color: var(--third);
     height: 3rem;
 }
-footer img{
+
+footer img {
     height: 100%;
     padding: 0.4rem;
 }
-#bleh{
-    display:flex;
+
+#bleh {
+    display: flex;
     width: 500px;
-     height: 600px;
+    height: 600px;
     left: 1310px;
-   padding: 2rem 2rem 2rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
 }
-#h1{
+
+#h1 {
     font-style: normal;
     font-size: 100px;
     line-height: 110px;
     text-align: center;
     font-family: "Delicious Handrawn";
     font-weight: 400;
-    
+
     position: flex;
     width: 991px;
     height: 610px;
@@ -122,3 +140,24 @@ footer img{
     padding: 6rem 16rem 14rem 5rem;
 }
 
+#marca {
+    position: absolute;
+    width: 800px;
+    height: 500px;
+    left: 574px;
+    top: 200px;
+    padding: 0.6rem 0.6rem 0.7rem 0.7rem;
+    background: url(download-removebg-preview.png);
+}
+body{
+    background-color: #EBDDB8;
+}
+#dagua{
+    position: absolute;
+    width: 800px;
+    height: 500px;
+    left: 574px;
+    top: 200px;
+    padding: 0.6rem 0.6rem 0.7rem 0.7rem;
+    background: url(download-removebg-preview.png);
+}

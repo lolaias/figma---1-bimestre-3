@@ -1,0 +1,97 @@
+header picture input#menu{
+    display:none;
+}
+
+@media(max-width: 500px){
+    header picture{
+        position: fixed;
+        margin-top: 1rem;
+        align-items: baseline;
+    }
+}
+
+header picture ul{
+    display:none;
+    position: fixed;
+    background-color: black;
+    border-style: groove;
+    margin-left: 0rem;
+    padding: 2rem;
+    z-index: 5;
+    list-style: none;
+}
+
+header picture ul li{
+    text-align: left;
+    margin-bottom: 5rem;
+}
+
+header picture ul p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 8rem;
+    color: #4E4E4E;
+}
+
+
+header picture label[for="menu"]{
+    display:flex;
+    justify-content: flex-end;
+    cursor:pointer;
+}
+
+header picture label[for="menu"] div.menu-hamburguer{
+    width: 35px;
+    height: 15px;
+    margin: 12px 2px 5px 5px;
+}
+
+header picture label[for="menu"] div.menu-hamburguer span.hamburguer{
+    position: relative;
+    display:block;
+    background-color: black;
+    width: 30px;
+    height: 5px;
+}
+
+header picture label[for="menu"] div.menu-hamburguer span.hamburguer:before,
+header picture label[for="menu"] div.menu-hamburguer span.hamburguer:after{
+    position: absolute;
+    display:block;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    content: "";
+}
+
+header picture label[for="menu"] div.menu-hamburguer span.hamburguer:before{
+    top: -10px;
+}
+
+header picture label[for="menu"] div.menu-hamburguer span.hamburguer:after{
+    bottom: -10px;
+}
+
+header picture input:checked ~ ul{
+    display: block;
+    animation: fade-in 0.5s;
+}
+
+
+header picture input:checked ~ label{for="menu"}div.menu-hamburguer span.hamburguer:before{
+    top: 0px;
+}
+
+header picture input:checked ~ label{for="menu"}div.menu-hamburguer span.hamburguer:after{
+    bottom: 0px;
+}
+
+
+@keyframes fade-in{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
