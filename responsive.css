@@ -1,5 +1,5 @@
 @media (max-width:1010px){
-    main > section.list{
+    main .grid{
         grid-template-columns: auto auto auto;
 
     }
@@ -8,10 +8,10 @@
     header {
         height: 4.5rem;
     }
-    main > section.list {
+    main .grid {
         grid-template-columns: auto auto;
     }
-    main > section {
+    main .grid {
         font-size: 0.9;
     }
     footer {
@@ -19,7 +19,7 @@
     }
 }
 @media (max-width:500px){
-    main > section.list {
+    main .grid {
             grid-template-columns: auto;
     }
 }
